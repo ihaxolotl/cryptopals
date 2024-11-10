@@ -20,7 +20,8 @@ LDFLAGS := -fno-omit-frame-pointer     \
            -fsanitize=address          \
            -fsanitize=undefined        \
 
-SRCS := set1/01-convert-hex-to-base64.c
+SRCS := set1/common.c                  \
+        set1/01-convert-hex-to-base64.c
 
 all: $(BUILD_ROOT) $(BUILD_TARGET)
 
